@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>HTML Form Tutorial</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <section class="form_sec">
+            <h1>HTML Forms</h1>
+            <form action="./output.html">
+                <fieldset name="personalInfo">
+                    <legend>Personal Information</legend>
+
+                    <div></div>
+                    <div>
+                        <label for="search">Search Input by Label:</label>
+                        <input type="search" name="search" id="name" />
+                    </div>
+                    <div></div>
+                    <div></div>
+
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" />
+                    </div>
+
+                    <div>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" />
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" />
+                    </div>
+
+                    <div>
+                        <label for="pwd">Password:</label>
+                        <input type="password" name="pwd" id="pwd" />
+                    </div>
+
+                    <div>
+                        <label for="gender">Gender:</label>
+
+                        <input type="radio" name="gender" id="female" value="female" />
+                        <label for="female" style="font-weight: normal">Female</label>
+
+                        <input type="radio" name="gender" id="male" value="male" />
+                        <label for="male" style="font-weight: normal">Male</label>
+                    </div>
+
+                    <div>
+                        <label for="hobby">Hobby:</label>
+
+                        <input type="checkbox" name="hobby" id="music" value="music" />
+                        <label for="music" style="font-weight: normal">Music</label>
+
+                        <input type="checkbox" name="hobby" id="dance" value="dance" />
+                        <label for="dance" style="font-weight: normal">Dance</label>
+
+                        <input type="checkbox" name="hobby" id="study" value="study" />
+                        <label for="study" style="font-weight: normal">Study</label>
+                    </div>
+
+                    <div>
+                        <label for="fav_color">Favorite Color:</label>
+                        <input type="color" name="fav_color" id="fav_color" />
+                    </div>
+
+                    <div>
+                        <label for="birthdate">Birth Date:</label>
+                        <input type="date" name="birthdate" id="birthdate" />
+                    </div>
+
+                    <div>
+                        <label for="birthdatetime">Birth Date with Time:</label>
+                        <input type="datetime-local" name="birthdatetime" id="birthdatetime" />
+                    </div>
+
+                    <div>
+                        <label for="resume">Resume:</label>
+                        <input type="file" name="resume" id="resume" />
+                    </div>
+
+                    <div>
+                        <label for="crush">Crush:</label>
+                        <input type="hidden" name="crush" id="crush" value="Atif Aslam" />
+                    </div>
+
+                    <div>
+                        <label for="birthmonth">Birth Month:</label>
+                        <input type="month" name="birthmonth" id="birthmonth" />
+                    </div>
+
+                    <div>
+                        <label for="birthtime">Birth Time:</label>
+                        <input type="time" name="birthtime" id="birthtime" />
+                    </div>
+
+                    <div>
+                        <label for="telephone">Telephone:</label>
+                        <input type="tel" name="telephone" id="telephone" />
+                    </div>
+
+                    <div>
+                        <label for="url">Portfolio URL:</label>
+                        <input type="url" name="url" id="url" />
+                    </div>
+
+                    <div>
+                        <label for="fav_num">Favorite Number:</label>
+                        <input type="number" name="fav_num" id="fav_num" min="0" max="9" maxlength="1" />
+                    </div>
+
+                    <div>
+                        <label for="knowledge">Knowledge of HTML:</label>
+                        <input type="range" name="knowledge" id="knowledge" />
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 20px">
+                        <input type="reset" value="reset" />
+                        <input type="submit" name="submit" id="submit" />
+                        <input type="image" src="./images/right-arrow-svgrepo-com.svg" alt="Submit" width="48" height="48" />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>

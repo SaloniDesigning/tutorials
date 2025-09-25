@@ -1,0 +1,22 @@
+table {
+    border: 1px solid black;
+}
+
+.form_sec {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form_sec h1 {
+    text-align: center;
+}
+
+.form_sec form fieldset {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 15px;
+}
+
+.form_sec label {
+    font-weight: bold;
+}
