@@ -2,6 +2,7 @@
     <head>
         <title>Contact Us</title>
         <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js"></script>
     </head>
     <body>
         <nav>
@@ -20,5 +21,30 @@
             </div>
         </nav>
         <h1>Contact Us</h1>
+        <section>
+            <form id="contact_form" method="post">
+                <div>
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required />
+                </div>
+                <div>
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required />
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                </div>
+                <div>
+                    <label for="phone">Phone: </label>
+                    <input type="number" id="phone" name="phone" pattern="\d{10}" required />
+                </div>
+                <div>
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" id="dob" name="dob" required />
+                </div>
+                <input type="submit" />
+            </form>
+        </section>
     </body>
 </html>
