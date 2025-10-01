@@ -13,14 +13,6 @@ h1 {
     text-align: center;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgb(212, 208, 208);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
 section {
     margin: 50px 20px 0 20px;
@@ -105,12 +97,13 @@ nav {
     border: 1px solid black;
     border-radius: 5px;
     padding: 30px;
-    width: fit-content;
-    
+    width: 30%;
+
 }
 
 #contact_form label {
-    width: 100px;
+    /* width: 100px; */
+    margin-right: 10px;
 }
 
 .input_wp {
@@ -130,7 +123,7 @@ nav {
     border-radius: 5px;
     padding: 5px;
     outline: none;
-    
+
 }
 
 .btn_submit {
@@ -150,4 +143,54 @@ nav {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.social_wp {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.social_wp svg {
+    height: 35px;
+    width: 35px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.top_footer {
+    padding: 30px 0;
+    background-color: #111111fb;
+    color: #fff;
+}
+
+.top_footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.top_footer ul li {
+    list-style: none;
+}
+
+.top_footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bottom_footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
 }
