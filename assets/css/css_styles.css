@@ -1,0 +1,20 @@
+/* ---------------------------- CSS Backgrounds ------------------------------- */
+
+p {
+    text-indent: 100px;
+}
+
+.bg_color {
+    background-color: rgb(138, 43, 226, 0.5);
+}
+
+.bg_image {
+    background-image: url("../../images/bg_image.avif");
+    color: white;
+}
+
+.bg_image_repeat {
+    background-image: url("../../images/download.jpeg");
+    color: black;
+    background-repeat: no-repeat;
+}
