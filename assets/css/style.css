@@ -43,7 +43,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    background-color: #6495ed26;
+    background-color: rgb(192, 209, 241);
+    position: sticky;
+    top: 0;
 }
 
 .nav_links ul {
