@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+
 }
 
 table {
@@ -52,6 +53,7 @@ nav {
     display: flex;
     gap: 30px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .nav_links ul li {

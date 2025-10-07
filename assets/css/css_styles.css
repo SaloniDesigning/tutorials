@@ -6,7 +6,7 @@
     background-attachment: scroll;
 } */
 
-p {
+.bg_sec p {
     text-indent: 100px;
 }
 
@@ -24,4 +24,77 @@ p {
     background-image: url("../../assets/images/download.jpeg");
     color: black;
     background-repeat: no-repeat;
+}
+
+/* --------------------------------  CSS Borders -------------------------------- */
+
+.borders {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 20px;
+}
+
+.borders p {
+    text-align: center;
+    vertical-align: middle;
+}
+
+p.solid {
+    border: 2px solid black;
+}
+
+p.dotted {
+    border: 2px dotted black;
+}
+
+p.dashed {
+    border: 2px dashed black;
+}
+
+p.double {
+    border: 5px double black;
+}
+
+p.groove {
+    border: 5px groove black;
+}
+
+p.ridge {
+    border: 5px ridge black;
+}
+
+p.inset {
+    border: 5px inset black;
+}
+
+p.outset {
+    border: 5px outset black;
+}
+
+p.none {
+    border: none;
+}
+
+p.hidden {
+    border: hidden;
+}
+
+p.mixed {
+    border-top: 5px groove black;
+    border-right: 5px dashed violet;
+    border-bottom: 5px outset blue;
+    border-left: 5px double coral;
+}
+
+p.rounded {
+    border: 3px dotted red;
+    border-radius: 10px;
+}
+
+
+/* --------------------------------  CSS Margins -------------------------------- */
+
+.box {
+    border: 2px solid black;
+    border-radius: 5px;
 }
