@@ -92,9 +92,160 @@ p.rounded {
 }
 
 
-/* --------------------------------  CSS Margins -------------------------------- */
+/* --------------------------------  CSS Margins & Paddings -------------------------------- */
 
 .box {
     border: 2px solid black;
     border-radius: 5px;
+}
+
+p {
+    border: 1px solid black;
+}
+
+.margins {
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 500px;
+    margin-bottom: 100px;
+}
+
+.shorthand {
+    margin: 50px 20px 150px 50px
+}
+
+.paddings {
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 500px;
+    padding-bottom: 100px;
+}
+
+.p_shorthand {
+    padding: 50px 20px 150px 50px
+}
+
+/* --------------------------------  CSS Text -------------------------------- */
+
+.bg_color_text_color {
+    color: #fff;
+    background-color: blue;
+}
+
+.sub_title {
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    gap: 15px;
+}
+
+.wrapper p {
+    height: 100px;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.last_left {
+    text-align-last: left;
+}
+
+.last_center {
+    text-align-last: center;
+}
+
+.last_right {
+    text-align-last: right;
+}
+
+.last_justify {
+    text-align-last: justify;
+}
+
+.v_align_top b {
+    vertical-align: top;
+}
+
+.v_align_middle b {
+    vertical-align: middle;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: brown;
+    text-decoration-style: solid;
+    text-decoration-thickness: 25%;
+}
+
+.overline {
+    text-decoration: overline;
+    text-decoration-color: cadetblue;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 5px;
+}
+
+.line_through {
+    text-decoration: line-through;
+    text-decoration-color: chocolate;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+}
+
+.under_over {
+    text-decoration: underline overline;
+    text-decoration-color: crimson;
+    text-decoration-style: wavy;
+    text-decoration-thickness: auto;
+}
+
+.none {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.none_transform {
+    text-transform: none;
+}
+
+.text_indent {
+    text-indent: 20px;
+}
+
+.letter_spacing {
+    letter-spacing: 2px;
+}
+
+.line_height {
+    line-height: 1.5;
+}
+
+.word_spacing {
+    word-spacing: 3px;
 }
