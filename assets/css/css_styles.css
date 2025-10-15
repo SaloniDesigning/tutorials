@@ -91,6 +91,12 @@ p.rounded {
     border-radius: 10px;
 }
 
+p.image {
+    border: 15px solid transparent;
+    /* padding: 20px; */
+    border-image: url('../images/border.png') 40 round;
+}
+
 
 /* --------------------------------  CSS Margins & Paddings -------------------------------- */
 
