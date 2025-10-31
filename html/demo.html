@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Demo Page</title>
+</head>
+
+<body onhashchange="myFun()">
+    <a href="#" accesskey="y">Click here</a>
+
+    <p id="demo"></p>
+
+    <button onclick="changePart()">Change Hash</button>
+
+
+    <script>
+
+        const changePart = () => {
+            location.hash = "part5";
+            var x = location.hash;
+            document.getElementById("demo").innerHTML = "The anchor part is now: " + x;
+        }
+
+        const myFun = () => {
+            alert("Anchor change");
+        }
+
+    </script>
+</body>
+
+</html>
