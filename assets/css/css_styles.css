@@ -189,7 +189,7 @@ p {
 }
 
 .v_align_middle b {
-    vertical-align: middle;
+    vertical-align: baseline;
 }
 
 .underline {
