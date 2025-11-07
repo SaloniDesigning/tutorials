@@ -1,74 +1,41 @@
-<!DOCTYPE HTML5>
 <html>
 
 <head>
-    <title>Index page</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="icon" href="./images/favicon.png" />
-    <!-- <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous"
-        /> -->
+    <title>jQuery Selectors</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $("p").click(() => {
+                $("p").text("This Paragrapgh is clicked now..");
+                // $(this).hide();
+            })
+        })
+    </script>
 </head>
 
 <body>
     <nav>
         <div class="logo_sec">
-            <a href="./index.html">
-                <img src="./assets/images/html-5-svgrepo-com.svg" alt="HTML5" height="40px" width="40px" />
+            <a href="../index.html">
+                <img src="../assets/images/html-5-svgrepo-com.svg" alt="HTML5" height="40px" width="40px" />
             </a>
         </div>
         <div class="nav_links">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./html/images.html">Images</a></li>
-                <li><a href="./html/about.html">About Us</a></li>
-                <li><a href="./html/contact.html">Contact Us</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./images.html">Images</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </div>
     </nav>
-    <section>
-        <h2>HTML Tutorials</h2>
-        <ul class="topic_list">
-            <li><a href="./html/table.html">HTML Table Tutorial</a></li>
-            <li><a href="./html/list.html">HTML List Tutorial</a></li>
-            <li><a href="./html/iframe.html">HTML iFrame Tutorial</a></li>
-            <li><a href="./html/forms.html">HTML Form Tutorial</a></li>
-            <li><a href="#">HTML Headings Tutorial</a></li>
-            <li><a href="#">HTML Formatting Tutorial</a></li>
-            <li><a href="#">HTML Link Tutorial</a></li>
-            <li><a href="#">HTML Images Tutorial</a></li>
-            <li><a href="./html/demo.html">HTML DEMO</a></li>
-        </ul>
-    </section>
-    <section>
-        <h2>CSS Tutorials</h2>
-        <ul class="topic_list">
-            <li><a href="./css/backgrounds.html">CSS Backgrounds</a></li>
-            <li><a href="./css/icons.html">CSS Icons</a></li>
-            <li><a href="./css/borders.html">CSS Borders</a></li>
-            <li><a href="./css/margins.html">CSS Margins</a></li>
-            <li><a href="./css/paddings.html">CSS Paddings</a></li>
-            <li><a href="./css/text.html">CSS Text</a></li>
-            <li><a href="./css/transition.html">CSS Transitions</a></li>
-            <li><a href="./css/animations.html">CSS Animations</a></li>
-        </ul>
-    </section>
-    <section>
-        <h2>jQuery Tutorials</h2>
-        <ul class="topic_list">
-            <li><a href="./jQuery/selectors.html">jQuery Selectors</a></li>
-            <!-- <li><a href="./css/icons.html">CSS Icons</a></li>
-            <li><a href="./css/borders.html">CSS Borders</a></li>
-            <li><a href="./css/margins.html">CSS Margins</a></li>
-            <li><a href="./css/paddings.html">CSS Paddings</a></li>
-            <li><a href="./css/text.html">CSS Text</a></li>
-            <li><a href="./css/transition.html">CSS Transitions</a></li>
-            <li><a href="./css/animations.html">CSS Animations</a></li> -->
-        </ul>
-    </section>
+    <p>This is a Paragraph.</p>
+    <!-- <button>Click</button> -->
+    <br>
+    <span class="span_cls">This is a Span</span>
+    <br>
+    <div id="div_id">This is a Div</div>
     <footer>
         <div class="top_footer">
             <div class="social_wp">
@@ -106,16 +73,16 @@
             <div>
                 <ul>
                     <li>
-                        <a href="./index.html">Home</a>
+                        <a href="../index.html">Home</a>
                     </li>
                     <li>
-                        <a href="./html/images.html">Images</a>
+                        <a href="./images.html">Images</a>
                     </li>
                     <li>
-                        <a href="./html/about.html">About us</a>
+                        <a href="./about.html">About us</a>
                     </li>
                     <li>
-                        <a href="./html/contact.html">Contact us</a>
+                        <a href="./contact.html">Contact us</a>
                     </li>
                 </ul>
             </div>
@@ -124,11 +91,7 @@
             <b>Copyright &copy;2025; Designed by SALONI</b>
         </div>
     </footer>
-    <!-- <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"
-        ></script> -->
+
 </body>
 
 </html>
