@@ -1,17 +1,49 @@
 <html>
 
 <head>
-    <title>jQuery Selectors</title>
+    <title>jQuery Events</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
+
+        // Single Click
+
         $(document).ready(() => {
-            $("p").click(() => {
-                $("p").text("This Paragrapgh is clicked now..");
-                // $(this).hide(); This keyword is not working
-            })
-        })
+            $('#clk').click(() => {
+                alert("Button Click...");
+            });
+        });
+
+        // Double Click
+
+        $(document).ready(() => {
+            $('#dbl_clk').dblclick(() => {
+                alert("Button Click twice...");
+            });
+        });
+
+        // Mouse Enter
+
+        $(document).ready(() => {
+            $('#mouse_enter').mouseenter(() => {
+                alert("You are at Mouse enter...");
+            });
+        });
+
+        // Mouse Out
+
+        $(document).ready(() => {
+            $('#mouse_out').mouseout(() => {
+                alert("You are at Mouse out...");
+            });
+        });
     </script>
+
+    <style>
+        p {
+            width: fit-content;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,12 +62,27 @@
             </ul>
         </div>
     </nav>
-    <p>This is a Paragraph.</p>
-    <!-- <button>Click</button> -->
-    <br>
-    <span class="span_cls">This is a Span</span>
-    <br>
-    <div id="div_id">This is a Div</div>
+
+    <section>
+        <!-- Click Event -->
+
+        <button id="clk">Single Click</button>
+
+        <!-- Double Click Event -->
+
+        <button id="dbl_clk">Double Click</button>
+    </section>
+
+    <section>
+        <!-- Mouse Enter -->
+
+        <p id="mouse_enter">Mouse Enter Event</p>
+
+        <!-- Mouse Out -->
+
+        <p id="mouse_out">Mouse Out Event</p>
+    </section>
+
     <footer>
         <div class="top_footer">
             <div class="social_wp">
@@ -91,7 +138,6 @@
             <b>Copyright &copy;2025; Designed by SALONI</b>
         </div>
     </footer>
-
 </body>
 
 </html>
