@@ -4,44 +4,15 @@
     <title>jQuery Events</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-
-        // Single Click
-
-        $(document).ready(() => {
-            $('#clk').click(() => {
-                alert("Button Click...");
-            });
-        });
-
-        // Double Click
-
-        $(document).ready(() => {
-            $('#dbl_clk').dblclick(() => {
-                alert("Button Click twice...");
-            });
-        });
-
-        // Mouse Enter
-
-        $(document).ready(() => {
-            $('#mouse_enter').mouseenter(() => {
-                alert("You are at Mouse enter...");
-            });
-        });
-
-        // Mouse Out
-
-        $(document).ready(() => {
-            $('#mouse_out').mouseout(() => {
-                alert("You are at Mouse out...");
-            });
-        });
-    </script>
+    <script src="../assets/js/events_script.js"></script>
 
     <style>
         p {
             width: fit-content;
+        }
+
+        .text_color {
+            color: "red";
         }
     </style>
 </head>
@@ -81,7 +52,41 @@
         <!-- Mouse Out -->
 
         <p id="mouse_out">Mouse Out Event</p>
+
+        <!-- Mouse Down -->
+
+        <p id="mouse_down">Mouse Down Event</p>
+
+        <!-- Mouse Up -->
+
+        <p id="mouse_up">Mouse Up Event</p>
+
+        <!-- Mouse Hover -->
+
+        <p id="hover">Mouse Hover Event</p>
     </section>
+
+    <section>
+        <!-- Focus and Blur Events -->
+
+        <h5 style="text-decoration: underline;">Focus and Blur Event</h5>
+
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname">
+
+        <br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname">
+    </section>
+
+    <section>
+        <!-- On Events -->
+
+        <button id="on">ON Event</button>
+    </section>
+
+    <br>
 
     <footer>
         <div class="top_footer">
