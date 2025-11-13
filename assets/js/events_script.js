@@ -79,10 +79,18 @@ $(document).ready(function () {
 
 // On Event
 
-$("#on").on("click", function () {
-    $(this).alert("On Click...");
-});
+// $(document).ready(function () {
+//     $("#on").on("click", function () {
+//         alert("On Click...");
+//     });
 
-$("#on").on("hover", function () {
-    $(this).toggleClass('text_color');
-});
+
+// });
+
+// $(document).ready(function () {
+//     $("#on").on("click", function () {
+//         $("#color_change").toggleClass('text_color');
+//     });
+// })
+
+

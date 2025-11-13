@@ -1,28 +1,10 @@
 <html>
 
 <head>
-    <title>jQuery Events</title>
+    <title>jQuery Effects</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../assets/js/events_script.js"></script>
-
-    <style>
-        p {
-            width: fit-content;
-        }
-
-        .color {
-            background-color: "red";
-        }
-    </style>
-
-    <script>
-        $(document).ready(function () {
-            $("#on").on("click", function () {
-                $("#color_change").toggleClass('color');
-            });
-        })
-    </script>
+    <script src="../assets/js/effects.js"></script>
 </head>
 
 <body>
@@ -41,62 +23,25 @@
             </ul>
         </div>
     </nav>
-
     <section>
-        <!-- Click Event -->
-
-        <button id="clk">Single Click</button>
-
-        <!-- Double Click Event -->
-
-        <button id="dbl_clk">Double Click</button>
+        <h1>jQuery Effects</h1>
     </section>
 
     <section>
-        <!-- Mouse Enter -->
+        <h3>hide() & show() :</h3>
 
-        <p id="mouse_enter">Mouse Enter Event</p>
+        <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate quod, odio temporibus
+            sapiente corrupti iusto maiores illum dolorum id, nihil reprehenderit voluptatibus nesciunt. Cum et impedit
+            expedita itaque corporis!'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, iure, saepe
+            quis, hic eius at illo numquam illum sint temporibus natus dolorum ullam placeat facere? Magnam veniam sit
+            atque nesciunt!</p>
 
-        <!-- Mouse Out -->
+        <button id="hide">Hide Content</button>
 
-        <p id="mouse_out">Mouse Out Event</p>
+        <button id="show">Show Content</button>
 
-        <!-- Mouse Down -->
-
-        <p id="mouse_down">Mouse Down Event</p>
-
-        <!-- Mouse Up -->
-
-        <p id="mouse_up">Mouse Up Event</p>
-
-        <!-- Mouse Hover -->
-
-        <p id="hover">Mouse Hover Event</p>
+        <button id="toggle">Toggle Content</button>
     </section>
-
-    <section>
-        <!-- Focus and Blur Events -->
-
-        <h5 style="text-decoration: underline;">Focus and Blur Event</h5>
-
-        <label for="fname">First Name:</label>
-        <input type="text" name="fname" id="fname">
-
-        <br>
-
-        <label for="lname">Last Name:</label>
-        <input type="text" name="lname" id="lname">
-    </section>
-
-    <section>
-        <!-- On Events -->
-
-        <button id="on">ON Event</button>
-
-        <p id="color_change">This is changing color text</p>
-    </section>
-
-    <br>
 
     <footer>
         <div class="top_footer">
