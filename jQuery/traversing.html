@@ -6,8 +6,11 @@
 			href="../assets/css/style.css"
 		/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="../assets/js/html.js"></script>
+		<script src="../assets/js/traversing.js"></script>
 		<style>
+			body {
+				display: block;
+			}
 			.cssPara {
 				background-color: bisque;
 				color: red;
@@ -38,122 +41,26 @@
 		</nav>
 
 		<section>
-			<h1>jQuery HTML</h1>
-		</section>
+			<h1>jQuery Traversing</h1>
 
-		<section>
-			<h3>Get Content: text(), html() and val() :</h3>
+			<section>
+				<h3>Ancestors:</h3>
 
-			<br />
-			<p
-				id="content"
-				style="font-size: 18px"
-			>
-				This text is a <b>bold</b> text.
-			</p>
-			<button id="text">Show Text</button>
-			<button id="html">Show HTML</button>
-			<br />
-			<br />
-
-			<label for="name">Enter Your Name: </label>
-			<input
-				type="text"
-				name="name"
-				id="name"
-			/>
-			<br />
-			<button id="showName">Show Name</button>
-		</section>
-
-		<section>
-			<h3>Get Attributes: attr()</h3>
-
-			<br />
-
-			<a
-				href="https://www.google.com/"
-				id="google"
-				>Go to Google</a
-			>
-			<br />
-			<button id="href">Show href</button>
-		</section>
-
-		<section>
-			<h3>Set Content: text(), html() and val() :</h3>
-
-			<br />
-			<p
-				id="textPara"
-				style="font-size: 18px"
-			>
-				This text is a text.
-			</p>
-			<p
-				id="htmlPara"
-				style="font-size: 18px"
-			>
-				This is HTML text.
-			</p>
-			<button id="setText">Set Text</button>
-			<button id="setHtml">Set HTML</button>
-			<br />
-			<br />
-
-			<label for="color">Enter Color Name: </label>
-			<input
-				type="text"
-				name="color"
-				id="color"
-				value="red"
-			/>
-			<br />
-			<button id="setColor">Set Color</button>
-		</section>
-
-		<section>
-			<h3>Add Content:</h3>
-
-			<p id="addText">This text is</p>
-			<button id="append">Append</button>
-			<button id="prepend">Prepend</button>
-			<br /><br /><br />
-			<img
-				src="../assets/images/html-5-svgrepo-com.svg"
-				alt="Image"
-				height="100px"
-				width="100px"
-				id="w3s"
-			/>
-			<br /><br />
-			<button id="before">Add Before</button>
-			<button id="after">Add After</button>
-		</section>
-
-		<section>
-			<h3>Remove:</h3>
-
-			<p
-				id="rmText"
-				style="background-color: blanchedalmond; height: 100px"
-			>
-				This text is removable
-			</p>
-			<br /><br />
-			<button id="empty">Empty Element</button>
-			<button id="remove">Remove Element</button>
-		</section>
-
-		<section>
-			<h3>CSS Classes:</h3>
-
-			<p id="cssText">This is CSS classes example.</p>
-			<br /><br />
-			<button id="addCls">Add Class</button>
-			<button id="rmCls">Remove Class</button>
-			<button id="tgCls">Toggle Class</button>
-			<button id="setCss">Set CSS</button>
+				<div style="border: 1px solid black; padding: 15px; margin: 5px">
+					div
+					<ul style="border: 1px solid black; padding: 15px; margin: 5px">
+						ul
+						<li style="border: 1px solid black; padding: 15px; margin: 5px; list-style: none">
+							li
+							<span style="border: 1px solid black; padding: 15px; margin: 5px; display: block">span</span>
+						</li>
+					</ul>
+				</div>
+				<br /><br />
+				<button id="parent">Parent text:red</button>
+				<button id="parents">Parents text:blue</button>
+				<button id="parentUntil">Parent Until div:green</button>
+			</section>
 		</section>
 
 		<footer>
