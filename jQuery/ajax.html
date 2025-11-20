@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>jQuery AJAX example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        const http = new XMLHttpRequest();
+        http.onload = function () {
+            const data = JSON.parse(this.responseText);
+            let users = "";
+
+            data.forEach((item) => {
+                users += `<li>${item.name}</li>`;
+            });
+
+
+            $("#userList").html(users);
+        }
+        http.open("GET", "http://jsonplaceholder.typicode.com/users", true);
+        http.send()
+    </script>
+</head>
+
+<body>
+    <h2>User List:</h2>
+
+    <ul id="userList"></ul>
+</body>
+
+</html>
